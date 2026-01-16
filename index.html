@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Quiz Game</title>
+  <title>Pizza Order Game 🍕</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    input { margin: 5px; padding: 5px; }
+    button { padding: 10px 20px; margin-top: 10px; cursor: pointer; }
+    #result { margin-top: 20px; font-size: 1.2em; font-weight: bold; }
+  </style>
 </head>
 <body>
 
-<h1>🔥 Simple Quiz Game</h1>
+<h1>🔥 Welcome to the Online Pizza Shop 🍕</h1>
 
-<p id="question"></p>
+<p>Choose pizza size (M, L, XL):</p>
+<input type="text" id="size" placeholder="M, L, XL">
 
-<button onclick="answer('a')">A</button>
-<button onclick="answer('b')">B</button>
+<p>Do you want paperoni? (Y/N)</p>
+<input type="text" id="paperoni" placeholder="Y/N">
+
+<p>Do you want extra cheese? (Y/N)</p>
+<input type="text" id="cheese" placeholder="Y/N">
+
+<br>
+<button onclick="calculateBill()">Get Bill</button>
 
 <p id="result"></p>
 
